@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Keyzhia Nurul Aulia</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff5fa;
+      color: #453541;
+      line-height: 1.7;
+      padding: 25px 15px;
+    }
+
+    .cv {
+      max-width: 850px;
+      margin: auto;
+      background: #ffffff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(150, 85, 120, 0.12);
+    }
+
+    header {
+      background: linear-gradient(135deg, #f5cfe0, #fce9f1);
+      text-align: center;
+      padding: 35px 20px;
+    }
+
+    .foto-container {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 18px;
+    }
+
+    .foto-profil {
+      width: 150px;
+      height: 150px;
+      display: block;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      background: #f9dce9;
+    }
+
+    .ikon-kamera {
+      position: absolute;
+      right: 0;
+      bottom: 4px;
+      width: 43px;
+      height: 43px;
+      border-radius: 50%;
+      background: #c45e91;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 21px;
+      cursor: pointer;
+      border: 3px solid white;
+      box-shadow: 0 2px 8px #00000020;
+    }
+
+    .ikon-kamera:hover {
+      background: #a84476;
+    }
+
+    header h1 {
+      font-size: 28px;
+      color: #783b5c;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      color: #754d63;
+      font-size: 14px;
+    }
+
+    main {
+      padding: 30px;
+    }
+
+    section {
+      margin-bottom: 25px;
+    }
+
+    section h2 {
+      color: #b65383;
+      font-size: 18px;
+      border-bottom: 2px solid #f3d4e2;
+      padding-bottom: 7px;
+      margin-bottom: 13px;
+    }
+
+    .tentang {
+      text-align: justify;
+    }
+
+    .data {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 8px 12px;
+    }
+
+    .label {
+      font-weight: bold;
+      color: #794c65;
+    }
+
+    .kontak p {
+      margin-bottom: 6px;
+      overflow-wrap: anywhere;
+    }
+
+    footer {
+      text-align: center;
+      padding: 16px;
+      background: #fff0f6;
+      color: #94677e;
+      font-size: 12px;
+    }
+
+    @media (max-width: 500px) {
+      body {
+        padding: 12px 8px;
+      }
+
+      header {
+        padding: 28px 15px;
+      }
+
+      header h1 {
+        font-size: 23px;
+      }
+
+      main {
+        padding: 22px 18px;
+      }
+
+      .data {
+        grid-template-columns: 1fr;
+        gap: 2px;
+      }
+
+      .data .label {
+        margin-top: 8px;
+      }
+    }
+
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+
+      .cv {
+        box-shadow: none;
+      }
+
+      .ikon-kamera {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="cv">
+
+    <header>
+      <div class="foto-container">
+        <img
+          id="fotoProfil"
+          class="foto-profil"
+          alt="Foto profil Keyzhia"
+        >
+
+        <label
+          for="inputFoto"
+          class="ikon-kamera"
+          title="Pilih foto dari galeri"
+          aria-label="Tambah foto profil"
+        >
+          📷
+        </label>
+
+        <input
+          type="file"
+          id="inputFoto"
+          accept="image/*"
+          hidden
+        >
+      </div>
+
+      <h1>Keyzhia Nurul Aulia</h1>
+      <p>Curriculum Vitae</p>
+    </header>
+
+    <main>
+
+      <section>
+        <h2>Profil Singkat</h2>
+        <p class="tentang">
+          Saya adalah pribadi yang empatik, intuitif, setia,
+          penuh perhatian, dan protektif terhadap orang-orang
+          yang berarti bagi saya. Saya senang mempelajari hal
+          baru, bertanggung jawab, serta berusaha memberikan
+          perhatian dan kepedulian dalam setiap hal yang saya
+          lakukan.
+        </p>
+      </section>
+
+      <section>
+        <h2>Data Diri</h2>
+
+        <div class="data">
+          <span class="label">Nama Lengkap</span>
+          <span>Keyzhia Nurul Aulia</span>
+
+          <span class="label">Tempat, Tanggal Lahir</span>
+          <span>Isi tempat dan tanggal lahir</span>
+
+          <span class="label">Jenis Kelamin</span>
+          <span>Perempuan</span>
+
+          <span class="label">Alamat</span>
+          <span>Isi alamat kamu</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Pendidikan</h2>
+
+        <div class="data">
+          <span class="label">Sekolah</span>
+          <span>Isi nama sekolah kamu</span>
+
+          <span class="label">Jurusan</span>
+          <span>Isi jurusan jika ada</span>
+        </div>
+      </section>
+
+      <section class="kontak">
+        <h2>Kontak</h2>
+
+        <p>
+          <strong>Email:</strong>
+          isi-email-kamu@example.com
+        </p>
+
+        <p>
+          <strong>No. HP:</strong>
+          Isi nomor HP kamu
+        </p>
+      </section>
+
+    </main>
+
+    <footer>
+      © 2026 Keyzhia Nurul Aulia
+    </footer>
+
+  </div>
+
+  <script>
+    const inputFoto = document.getElementById("inputFoto");
+    const fotoProfil = document.getElementById("fotoProfil");
+
+    inputFoto.addEventListener("change", function () {
+      const file = this.files[0];
+
+      if (!file) return;
+
+      if (!file.type.startsWith("image/")) {
+        alert("Silakan pilih file gambar.");
+        return;
+      }
+
+      const reader = new FileReader();
+
+      reader.onload = function (event) {
+        fotoProfil.src = event.target.result;
+      };
+
+      reader.readAsDataURL(file);
+    });
+  </script>
+
+</body>
+</html>
